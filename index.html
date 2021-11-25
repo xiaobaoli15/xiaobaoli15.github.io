@@ -60,50 +60,46 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr onmouseout="digcl_stop()" onmouseover="digcl_start()">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+	    <tr onmouseout="idm_stop()" onmouseover="idm_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/neurips_digcl.png' width="160">
+                <img src='images/ICCV_IDM.PNG' width="160">
               </div>
               <script type="text/javascript">
                 function idm_start() {
-                  document.getElementById('digcl_image').style.opacity = "1";
+                  document.getElementById('idm_image').style.opacity = "1";
                 }
 
                 function idm_stop() {
-                  document.getElementById('digcl_image').style.opacity = "0";
+                  document.getElementById('idm_image').style.opacity = "0";
                 }
                 idm_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
-                <papertitle>Digraph Contrastiv Learning</papertitle>
+              <a href="http://arxiv.org/abs/2108.02413">
+                <papertitle>An Unsupervised Multi-Shot Person Re-Identification Method via Mutual Normalized Sparse Representation and Stepwise Learning</papertitle>
               </a>
               <br>
-              <a href="https://zekuntong.com/">Zekun Tong</a>,
-              <a href="https://yuxuanliang.com/">Yuxuan Liang</a>,
-              <a href="https://henghuiding.github.io/">Henghui Ding</a>,
-              <strong>Yongxing Dai</strong>,
-              <a href="https://scholar.google.com/citations?user=l4LPBs0AAAAJ&hl=en">Xinke Li</a>,
-              <a href="https://changhu.wang/">Changhu Wang</a>,
-              
+              <strong>Xiaobao Li</strong>,
+              Qingying Li,
+              Wen Wang,
+              Lijun Guo</a>
               <br>
-							<em>NeurIPS</em>, 2021
+		<em>IEEE Transactions on Intelligent Transportation Systems </em>, 2018
               <br>
-              <a href="https://openreview.net/forum?id=yLEcG62ANX">paper</a>
-							/
-              <a href="https://github.com/flyingtango/DiGCL">code</a>
+              <a href="">paper</a>
               /
-              <a href="data/tong2021directed.bib">bibtex</a>
+              <a href="">arXiv</a>
+							/
+              <a href="">code</a>
+              /
+              <a href="">bibtex</a>
               <p></p>
-              <p>We design a digraph data augmentation method called Laplacian perturbation and theoretically 
-                analyze how it provides contrastive information without changing the digraph structure. 
-              </p>
+              <p>We present MNSR method.</p>
             </td>
-          </tr> 
+          </tr>
 
           <tr onmouseout="idm_stop()" onmouseover="idm_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -182,135 +178,9 @@
               /
               <a href="">bibtex</a>
               <p></p>
-              <p>We present a global similarity metric regarding set to set by using sparse representation. 
-		 It facilitates cross-camera pairwise pseudo-label prediction in unsupervised video-based person ReID.</p>
+              <p>We present a JGSR method.</p>
             </td>
           </tr>      
-
-          <tr onmouseout="dualrefinement_stop()" onmouseover="dualrefinement_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/TIP_dual.PNG' width="160">
-              </div>
-              <script type="text/javascript">
-                function dualrefinement_start() {
-                  document.getElementById('dualrefinement_image').style.opacity = "1";
-                }
-
-                function dualrefinement_stop() {
-                  document.getElementById('dualrefinement_image').style.opacity = "0";
-                }
-                dualrefinement_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/SikaStar/Dual-Refinement">
-                <papertitle>Dual-Refinement: Joint Label and Feature Refinement for Unsupervised Domain Adaptive Person Re-Identification</papertitle>
-              </a>
-              <br>
-              <strong>Yongxing Dai</strong>,
-              <a href="https://ljchangyu.wixsite.com/liujun021">Jun Liu</a>,
-              <a href="https://scholar.google.com/citations?user=hR0hxdgAAAAJ&hl=zh-CN">Yan Bai</a>,
-              <a href="https://scholar.google.com/citations?user=odJ3HhEAAAAJ&hl=en">Zekun Tong</a>,
-              <a href="https://scholar.google.com/citations?user=hsXZOgIAAAAJ&hl=zh-CN">Ling-Yu Duan</a>
-              <br>
-							<em>IEEE Transactions on Image Processing (TIP)</em>, 2021 &nbsp
-              <br>
-              <a href="https://ieeexplore.ieee.org/document/9513260">paper</a>
-							/
-              <a href="https://arxiv.org/abs/2012.13689">arXiv</a>
-							/
-              <a href="https://github.com/SikaStar/Dual-Refinement">code</a>
-              /
-              <a href="data/dai2021dual.bib">bibtex</a>
-              <p></p>
-              <p>Dual-Refinement can jointly refine pseudo labels at the off-line clustering phase and features at the on-line training phase, to alternatively boost the label purity and feature discriminability in the target domain for
-                more reliable re-ID.</p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="ramoe_stop()" onmouseover="ramoe_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/cvpr_ramoe.PNG' width="160">
-              </div>
-              <script type="text/javascript">
-                function ramoe_start() {
-                  document.getElementById('ramoe_image').style.opacity = "1";
-                }
-
-                function ramoe_stop() {
-                  document.getElementById('ramoe_image').style.opacity = "0";
-                }
-                ramoe_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Dai_Generalizable_Person_Re-Identification_With_Relevance-Aware_Mixture_of_Experts_CVPR_2021_paper.pdf">
-                <papertitle>Generalizable Person with Relevance-aware Mixture of Experts</papertitle>
-              </a>
-              <br>
-              <strong>Yongxing Dai</strong>,
-              Xiaotong Li</a>,
-              <a href="https://ljchangyu.wixsite.com/liujun021">Jun Liu</a>,
-              <a href="https://scholar.google.com/citations?user=odJ3HhEAAAAJ&hl=en">Zekun Tong</a>,
-              <a href="https://scholar.google.com/citations?user=hsXZOgIAAAAJ&hl=zh-CN">Ling-Yu Duan</a>
-              <br>
-							<em>CVPR</em>, 2021 &nbsp
-              <br>
-              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Dai_Generalizable_Person_Re-Identification_With_Relevance-Aware_Mixture_of_Experts_CVPR_2021_paper.pdf">paper</a>
-              /
-              <a href="https://arxiv.org/abs/2012.13689">arXiv</a>
-              /
-              <a href="data/dai2021ramoe.bib">bibtex</a>
-              <p></p>
-              <p>We propose a novel method called the relevance-aware mixture of experts (RaMoE), 
-                using an effective voting-based mixture mechanism to dynamically leverage source domains’
-                diverse characteristics to improve the model’s generalization</p>
-            </td>
-          </tr> 
-
-
-          <tr onmouseout="ijcai_stop()" onmouseover="ijcai_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/ijcai.PNG' width="160">
-              </div>
-              <script type="text/javascript">
-                function ijcai_start() {
-                  document.getElementById('ijcai_image').style.opacity = "1";
-                }
-
-                function ijcai_stop() {
-                  document.getElementById('ijcai_image').style.opacity = "0";
-                }
-                ijcai_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.ijcai.org/proceedings/2020/0066.pdf">
-                <papertitle>Disentangled Feature Learning Network for Vehicle Re-Identification</papertitle>
-              </a>
-              <br>
-              <a href="https://scholar.google.com/citations?user=hR0hxdgAAAAJ&hl=zh-CN">Yan Bai</a>,
-              <a href="https://scholar.google.com/citations?user=xDTcPZIAAAAJ&hl=zh-CN">Yihang Lou</a>,
-              <strong>Yongxing Dai</strong>,
-              <a href="https://ljchangyu.wixsite.com/liujun021">Jun Liu</a>,
-              Ziqian Chen,
-              <a href="https://scholar.google.com/citations?user=hsXZOgIAAAAJ&hl=zh-CN">Ling-Yu Duan</a>
-              <br>
-							<em>IJCAI</em>, 2020 &nbsp
-              <br>
-              <a href="https://www.ijcai.org/proceedings/2020/0066.pdf">paper</a>
-              /
-              <a href="data/ijcai2020.bib">bibtex</a>
-              <p></p>
-              <p>We propose a Disentangled Feature Learning Network (DFLNet) to learn orientation specific and common features 
-                concurrently. Moreover, to effectively use these two types of features for ReID, we further design a feature metric 
-                alignment scheme to ensure the consistency of the metric scales.</p>
-            </td>
-          </tr> 
-
 
         </tbody></table>
 
